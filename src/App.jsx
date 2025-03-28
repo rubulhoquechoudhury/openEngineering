@@ -8,26 +8,48 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <nav className="navbar">
+          <div className="container">
+            <a href="#" className="logo">MyWebsite</a>
+            <ul className="nav-links">
+              <li><a href="#banner">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section id="banner" className="banner">
+        <div className="container">
+          <h1>Welcome to MyWebsite</h1>
+          <p>Your one-stop solution for all things web development.</p>
+          <button>Get Started</button>
+        </div>
+      </section>
+
+      <section id="about" className="about">
+        <div className="container">
+          <h2>About Us</h2>
+          <p>
+            We are a team of passionate developers dedicated to creating
+            responsive and user-friendly websites. Our mission is to bring
+            your ideas to life with cutting-edge technology.
+          </p>
+        </div>
+      </section>
+
+      <footer id="footer" className="footer">
+        <div className="container">
+          <p>&copy; 2023 MyWebsite. All rights reserved.</p>
+          <ul className="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </footer>
     </>
   )
 }
